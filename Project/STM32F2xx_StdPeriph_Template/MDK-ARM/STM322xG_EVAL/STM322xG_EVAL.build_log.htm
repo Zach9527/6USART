@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.14.2
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Cortex-M3, y, LIC=WHYH9-4XPFW-X7SRZ-JR4QY-JQC6W-GV02E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+E:\project_source\µÁ∆¯  ≈‰∆˜\ORC2225B_CL1_MCU\STM32F2xx_StdPeriph_Lib_V1.1.0\Project\STM32F2xx_StdPeriph_Template\MDK-ARM\Project.uvproj
+Project File Date:  08/20/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'STM322xG_EVAL'
+compiling main.c...
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(112): warning:  #375-D: declaration requires a typedef name
+  };
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(122): warning:  #375-D: declaration requires a typedef name
+  };
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(132): warning:  #375-D: declaration requires a typedef name
+  };
+..\main.c(60): warning:  #188-D: enumerated type mixed with another type
+      for(i = 0; i < COM_MAX; i++)
+..\main.c(118): warning:  #223-D: function "TIM2_Int_Init" declared implicitly
+      TIM2_Int_Init(125,50);//        125*50/60000000 = 104usÁ∫?Á≠?‰∫?Ê≥?Áâ?Áé?‰∏?9600‰º?Ëæ?1bitÁö?Êó?Èó?ÂÆ?Êó?Âô?Áö?È¢?Áé?‰∏?60M
+..\main.c(143): warning:  #223-D: function "memcmp" declared implicitly
+          if (!memcmp(buf, "ZT", 2) && pbuf->len > 2)
+..\main.c(146): warning:  #223-D: function "strstr" declared implicitly
+              SecondHead = (uint8*)strstr((char*)(buf + 2), "ZT");
+..\main.c(210): warning:  #223-D: function "memcpy" declared implicitly
+          memcpy(pbuf->Ram, buf, pbuf->len);
+..\main.c(211): warning:  #223-D: function "memset" declared implicitly
+          memset(pbuf->Ram + pbuf->len, 0x0, RAMSIZE - pbuf->len);
+..\main.c(252): warning:  #223-D: function "memcmp" declared implicitly
+          if (!memcmp(buf, "ZT", 2) && pbuf->len > 2)
+..\main.c(255): warning:  #223-D: function "strstr" declared implicitly
+              SecondHead = (uint8*)strstr((char*)(buf + 2), "ZT");
+..\main.c(319): warning:  #223-D: function "memcpy" declared implicitly
+          memcpy(pbuf->Ram, buf, pbuf->len);
+..\main.c(320): warning:  #223-D: function "memset" declared implicitly
+          memset(pbuf->Ram + pbuf->len, 0x0, RAMSIZE - pbuf->len);
+..\main.c(351): warning:  #167-D: argument of type "uint8 *" is incompatible with parameter of type "char *restrict"
+      virUart.send_max += sprintf(virUart.sendbuff,"version:V1.00\n");
+..\main.c(353): warning:  #223-D: function "send_remain_byte" declared implicitly
+      send_remain_byte();
+..\main.c(463): warning:  #167-D: argument of type "uint8 *" is incompatible with parameter of type "char *restrict"
+                      virUart.send_max += sprintf(virUart.sendbuff,"recv[%d]fifo errorCnt:%d\n",i,recvfifo[i].errorCnt);
+..\main.c(470): warning:  #167-D: argument of type "uint8 *" is incompatible with parameter of type "char *restrict"
+                      virUart.send_max += sprintf(virUart.sendbuff,"send[%d]fifo errorCnt:%d\n",i,sendfifo[i].errorCnt);
+..\main.c(477): warning:  #167-D: argument of type "uint8 *" is incompatible with parameter of type "char *restrict"
+                      virUart.send_max += sprintf(virUart.sendbuff,"recv[%d]ram errorCnt:%d\n",i,recvcontent[i].errorCnt);
+..\main.c: 18 warnings, 0 errors
+compiling stm32f2xx_it.c...
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(112): warning:  #375-D: declaration requires a typedef name
+  };
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(122): warning:  #375-D: declaration requires a typedef name
+  };
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(132): warning:  #375-D: declaration requires a typedef name
+  };
+..\stm32f2xx_it.c(331): warning:  #223-D: function "send_remain_byte" declared implicitly
+                  send_remain_byte();
+..\stm32f2xx_it.c: 4 warnings, 0 errors
+compiling stm322xg_eval.c...
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(112): warning:  #375-D: declaration requires a typedef name
+  };
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(122): warning:  #375-D: declaration requires a typedef name
+  };
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.h(132): warning:  #375-D: declaration requires a typedef name
+  };
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.c(322): warning:  #68-D: integer conversion resulted in a change of sign
+          return -1;
+..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.c: 4 warnings, 0 errors
+compiling misc.c...
+compiling stm32f2xx_exti.c...
+compiling stm32f2xx_gpio.c...
+compiling stm32f2xx_rcc.c...
+compiling stm32f2xx_syscfg.c...
+compiling stm32f2xx_usart.c...
+compiling stm32f2xx_tim.c...
+compiling system_stm32f2xx.c...
+assembling startup_stm32f2xx.s...
+linking...
+Program Size: Code=7292 RO-data=572 RW-data=176 ZI-data=20360  
+".\STM322xG_EVAL\STM322xG_EVAL.axf" - 0 Error(s), 26 Warning(s).
+</pre>
+</body>
+</html>
